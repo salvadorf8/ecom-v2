@@ -9,6 +9,8 @@ import './app.styles.scss';
 // it will render all Routes that matches
 
 // The component that gets rendered by Route, gets three arguments... history.... location... match...
+// also will be passed down only one child down, if you need history passed further use withRouter
+
 // match will hold the id of a record
 
 // /topics/:topicid is a url parameter
