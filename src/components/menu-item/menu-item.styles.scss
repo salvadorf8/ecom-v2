@@ -7,14 +7,11 @@
     justify-content: center;
     border: 1px solid black;
     margin: 0 7.5px 15px;
-    // was added to fix the overflow mentioned below
     overflow: hidden;
 
-    // ############### added to account for the large that was added on the menu section object
     &.large {
         height: 380px;
     }
-    // ###############
 
     &:first-child {
         margin-right: 7.5px;
@@ -24,7 +21,6 @@
         margin-left: 7.5px;
     }
 
-    // ############### added for the image to get animation affect but causing an overflow
     &:hover {
         cursor: pointer;
 
@@ -37,16 +33,12 @@
             opacity: 0.9;
         }
     }
-    // ###############
 
-    // added for the new div added
     .background-image {
         width: 100%;
         height: 100%;
-        // ############### css code to position image center and fill the whole div
         background-position: center;
         background-size: cover;
-        // ###############
     }
 
     .content {
@@ -57,11 +49,8 @@
         align-items: center;
         justify-content: center;
         border: 1px solid black;
-        // ############### added to make the inner box white and with opacity
         background-color: white;
         opacity: 0.7;
-        // ###############
-        // added to move content into the center
         position: absolute;
 
         .title {
