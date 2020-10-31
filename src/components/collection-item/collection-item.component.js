@@ -4,7 +4,6 @@ import './collection-item.styles.scss';
 
 const CollectionItem = ({ id, name, price, imageUrl }) => (
     <div className='collection-item'>
-        {/* string interpolation */}
         <div className='image' style={{ backgroundImage: `url(${imageUrl})` }} />
         <div className='collection-footer'>
             <span className='name'>{name}</span>

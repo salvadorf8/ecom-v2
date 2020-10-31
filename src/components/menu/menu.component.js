@@ -45,7 +45,6 @@ class Menu extends React.Component {
     render() {
         return (
             <div className='menu'>
-                {/* another way to pass all values is destructuring { id, ...section }, for now, I'll do it this way */}
                 {this.state.sections.map((section) => {
                     return <MenuItem key={section.id} {...section} />;
                 })}
