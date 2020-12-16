@@ -3,3 +3,11 @@ a {
     text-decoration: none;
     color: black;
 }
+
+// email and password has a slight protrution that is not aligned with the
+// sign in with google button.  The reason is because of how box-sizing is set
+// through all browsers.  box-sizing is a css value.... to fix this we will
+// use the universal selector, so for every element we want box-sizing: border-box
+* {
+    box-sizing: border-box;
+}
